@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://xxx.xxx.xxx.xxx:1433;DATABASENAME=xxx
+    username: xxxx
+    password: xxxxx
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa: 
+    database-platform: org.hibernate.dialect.SQLServer2008Dialect
+    generate-ddl: false
+    hibernate: 
+#      ddl-auto: none
+      ddl-auto: validate
+#      ddl-auto: update
+#      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+#    initialize: true # data.sql 을 이용한 DB 초기화 작업
+  mail:
+    default-encoding: UTF-8
+    username: xxxxxxx@gmail.com
+    password: 'xxxxxxxx'
+    host: smtp.gmail.com
+    port: 587
+    protocol: smtp
+    properties:
+      mail.smtp.starttls.enable: true
+      mail.smtp.auth: true
+###
+#   thymeleaf Settings
+###
+  thymeleaf:
+    cache: false
+          
+###
+#   Tomcat Settings
+###
+server:
+  port: 8088
+      
+      
+      
+#  h2: # jdbc ur: jdbc:h2:mem:testdb
+#    console: # http://localhost:8080/h2-console
+#      enabled: true

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Google 인증화면</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Google OTP 등록</h1>
+        </div>
+        <div>
+            <img src="" th:src="${qrCodeUrl}"/>
+        </div>
+        <div>
+                <img src="https://lh3.googleusercontent.com/jMwpM8BSQQpiTdscA6w2fTQpHlE7BdJKC1JoC4NBrlt542Vb3u1r_y1XJG4L9-9er1I=h310-rw"/><br/>
+        </div>
+        <div>
+        	<img src="http://mqr.kr/qr/?t=https%3a%2f%2fplay.google.com%2fstore%2fapps%2fdetails%3fid%3dcom.google.android.apps.authenticator2%26hl%3dko" width="200px"/><br/>
+            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">
+                <h3>안드로이드 환경 : Google Authenticator</h3>
+            </a>
+        </div>
+        <div>
+        	<img src="http://mqr.kr/qr/?t=https%3a%2f%2fitunes.apple.com%2fkr%2fapp%2fgoogle-authenticator%2fid388497605%3fmt%3d8" width="200px"/><br/>
+            <a href="https://itunes.apple.com/kr/app/google-authenticator/id388497605?mt=8">
+                <h3>IOS환경 : Google Authenticator</h3>
+            </a>
+        </div>
+        <div>OTP 등록을 마치면 메일을 삭제하기 바랍니다. OTP 를 재등록해야하는 경우 관리자에게 OTP 인증메일 재발송을 요청하세요.</div>
+    </div>
+</body>
+</html>
